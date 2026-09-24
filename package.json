@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-google-trends",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for google-trends",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-94aeee91692ffcd6360036ccc50c24c09376e94ac232410a05ed02e94e090aa3",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }
