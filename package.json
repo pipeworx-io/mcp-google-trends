@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-google-trends",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "MCP server for google-trends",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-google-trends": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "google-trends"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-google-trends.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/google-trends",
   "pipeworx": {
-    "sourceHash": "v1-2553dbea3ca0df223e138b97517254e7c8148cb9b593dc96b9cdd8f929208b3e",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "google-trends",
+    "gatewaySlug": "google-trends",
+    "sourceHash": "v1-e4a2147a77fe01fd41f6330763aadefd355cf7ca1993ef5a4220a2de6a1a071d",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
